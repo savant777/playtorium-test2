@@ -1,38 +1,29 @@
-# Discount Module (React)
+# Discount Module - Coding Test (Set 2)
 
-This is a **Discount Module** developed as part of a job application for **Playtorium Solutions**. The module allows users to select and apply multiple types of discount campaigns to a shopping cart, with real-time calculation of discounts and totals.
+## 📄 Project Overview
 
-🌐 **Live Demo:** [https://discount-module-ehbi.onrender.com/](https://discount-module-ehbi.onrender.com/)
+This project is a **take-home assignment** for the **Coding Test (Set 2)** provided by **Playtorium**. It is built to demonstrate my **frontend development skills** and **problem-solving abilities**.
 
----
-
-## 📋 Project Information
-
-- **Applicant:** Metawee Charoentungsirikul (เมธาวี เจริญตั้งศิริกุล)
-- **Position Applied:** Software Developer
-
----
-
-## 🚀 Technologies Used
-
-- React.js (Vite)
-- Bootstrap 5
-- JavaScript (ES6)
+* ⏳ **Duration:** 5 days (July 1, 2025 – July 6, 2025)
+* 🛠 **Tech Stack:** React.js, Bootstrap, CSS
+* 🌐 **Deployed Link:** [https://discount-module-ehbi.onrender.com/](https://discount-module-ehbi.onrender.com/)
+* 🙋‍♂️ **Submitted by:** Metawee Charoentungsirikul
 
 ---
 
 ## 📦 Main Structure
+
 ```
 /src
   /components
-    AppItems.js        → Displays items in the cart
+    AppItems.js        → Show items in cart
     CampaignModal.js   → Modal for selecting campaigns
-    AppCampaigns.js    → Card component for each campaign (supports campaign selection and points input)
-    AppSummary.js      → Summary component showing subtotal, discount breakdown, and total
+    AppCampaigns.js    → Card for each campaign (supports selecting campaign and points)
+    AppSummary.js      → Summary: Subtotal, Discount breakdown, Total
   /data
-    items.js           → Mock data for items
-    campaigns.js       → Mock data for campaigns
-  App.js               → Main Checkout Page
+    items.js           → Items mock data
+    campaigns.js       → Campaigns mock data
+  App.js               → Checkout page
 ```
 
 ---
@@ -53,29 +44,45 @@ This is a **Discount Module** developed as part of a job application for **Playt
 
 ---
 
-## 📂 Installation & Run Locally
+## 🔍 Assumptions
+
+* Users can apply **only one campaign per category**: Coupon, On Top, Seasonal.
+* The system applies discounts in the following **order**: Coupon → On Top → Seasonal.
+* For **points-based discounts (On Top)**, users can use points to get a discount of up to **20% of the subtotal** (1 point = 1 THB).
+* If users **enter invalid points** (negative, non-numeric, or exceeding the allowed maximum), the input will be **automatically adjusted** to the nearest valid value.
+* Discounts will **never cause the total to go below zero**.
+* Placeholder text is shown in point input to help guide users.
+
+---
+
+## 🚀 How to Run Locally
+
+1. Clone the repository:
 
 ```bash
-# Clone repository
 git clone https://github.com/savant777/playtorium-test2.git
+cd playtorium-test2
+```
 
-# Install dependencies
+2. Install dependencies:
+
+```bash
 npm install
+```
 
-# Start development server
+3. Run the development server:
+
+```bash
 npm start
 ```
 
-Visit: `http://localhost:3000`
+The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## 📝 Notes
+## 📝 Additional Notes
 
-- This project is for **demonstration purposes only**.
-- Code is modular and easy to extend.
-- Deployed on **Render** for quick access.
+* This project is solely for assessment purposes and may not include extensive validation or responsive design.
+* The main goal is to showcase **logical thinking**, **code organization**, and **React component design**.
 
----
-
-Thank you for your time and consideration! 😊
+Thank you for the opportunity! 😊
