@@ -1,0 +1,6 @@
+.summary p { margin-bottom: 0; }
+
+.summary-details {
+    display: flex;
+    justify-content: space-between;
+}

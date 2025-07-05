@@ -1,0 +1,15 @@
+.campaigns p { margin-bottom: 0; }
+
+.campaign-icon {
+    width: min(10vw, 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campaign-btn {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
