@@ -28,30 +28,30 @@ This project is a **take-home assignment** for the **Coding Test (Set 2)** provi
 
 ---
 
-## 💡 Features
+## 💡 Key Features
 
-- Display shopping cart with products
-- Select discount campaigns via modal:
+- 🛒 Display shopping cart with products
+- 🎟️ Select discount campaigns via modal:
   - **Coupon** (Fixed amount or Percentage)
-  - **On Top** (By category percentage or Point-based)
-  - **Seasonal** (Tiered spending)
-- Apply one discount per category (Coupon, On Top, Seasonal)
-- Real-time price calculation:
+  - **On Top** (Category-based percentage or Point-based)
+  - **Seasonal** (Tiered spending discounts)
+- ✅ Apply one discount per category (Coupon, On Top, Seasonal)
+- 🔄 Real-time price calculation:
   - Subtotal
-  - Discount breakdown
+  - Discount breakdown by category
   - Total after discount
-- Point-based discounts auto-calculate maximum allowed
+- 🏷️ Point-based discount with maximum auto-adjustment
 
 ---
 
 ## 🔍 Assumptions
 
-* Users can apply **only one campaign per category**: Coupon, On Top, Seasonal.
-* The system applies discounts in the following **order**: Coupon → On Top → Seasonal.
-* For **points-based discounts (On Top)**, users can use points to get a discount of up to **20% of the subtotal** (1 point = 1 THB).
-* If users **enter invalid points** (negative, non-numeric, or exceeding the allowed maximum), the input will be **automatically adjusted** to the nearest valid value.
-* Discounts will **never cause the total to go below zero**.
-* Placeholder text is shown in point input to help guide users.
+- Users can apply **only one campaign per category**: Coupon, On Top, Seasonal.
+- Discounts are applied in the following **order**: Coupon → On Top → Seasonal.
+- **Points-based discounts** (On Top) are limited to **20% of subtotal** (1 point = 1 THB).
+- Invalid points (negative, over limit, non-numeric) are automatically corrected.
+- The total amount will **never be negative**.
+- Placeholder text guides users when using points.
 
 ---
 
