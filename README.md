@@ -2,7 +2,7 @@
 
 ## 📄 Project Overview
 
-This project is a **take-home assignment** for the **Coding Test (Set 2)** provided by **Playtorium**. It is built to demonstrate my **frontend development skills** and **problem-solving abilities**.
+This project is a **take-home assignment** for the **Coding Test (Set 2)** provided by **Playtorium**. It is built to demonstrate my **software development skills** and **problem-solving abilities**.
 
 * ⏳ **Duration:** 5 days (July 1, 2025 – July 6, 2025)
 * 🛠 **Tech Stack:** React.js, Bootstrap, CSS
