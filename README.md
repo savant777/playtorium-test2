@@ -1,88 +1,96 @@
-# Discount Module - Coding Test (Set 2)
+# 🛒 Discount Module Engine (React.js)
 
 ## 📄 Project Overview
 
-This project is a **take-home assignment** for the **Coding Test (Set 2)** provided by **Playtorium**. It is built to demonstrate my **software development skills** and **problem-solving abilities**.
+This repository contains a high-fidelity implementation of a **Shopping Cart Discount Module**, developed as a technical assessment for **Playtorium Solutions**. The core objective of this project is to demonstrate robust logical reasoning, clean component architecture, and the ability to handle complex pricing algorithms in a real-time environment.
 
-* ⏳ **Duration:** 5 days (July 1, 2025 – July 6, 2025)
-* 🛠 **Tech Stack:** React.js, Bootstrap, CSS
-* 🌐 **Deployed Link:** [https://discount-module-ehbi.onrender.com/](https://discount-module-ehbi.onrender.com/)
-* 🙋‍♂️ **Submitted by:** Metawee Charoentungsirikul
-
----
-
-## 📦 Main Structure
-
-```
-/src
-  /components
-    AppItems.js        → Show items in cart
-    CampaignModal.js   → Modal for selecting campaigns
-    AppCampaigns.js    → Card for each campaign (supports selecting campaign and points)
-    AppSummary.js      → Summary: Subtotal, Discount breakdown, Total
-  /data
-    items.js           → Items mock data
-    campaigns.js       → Campaigns mock data
-  App.js               → Checkout page
-```
+- **⏳ Development Period:** 5 days (July 1, 2025 – July 6, 2025)
+- **🛠 Tech Stack:** React.js (Hooks), Bootstrap 5, CSS3
+- **🚀 Live Demo:** [View Deployed Application](https://savant777.github.io/playtorium-test2/)
+- **🙋‍♂️ Candidate:** Metawee Charoentungsirikul
 
 ---
 
-## 💡 Key Features
-
-- 🛒 Display shopping cart with products
-- 🎟️ Select discount campaigns via modal:
-  - **Coupon** (Fixed amount or Percentage)
-  - **On Top** (Category-based percentage or Point-based)
-  - **Seasonal** (Tiered spending discounts)
-- ✅ Apply one discount per category (Coupon, On Top, Seasonal)
-- 🔄 Real-time price calculation:
-  - Subtotal
-  - Discount breakdown by category
-  - Total after discount
-- 🏷️ Point-based discount with maximum auto-adjustment
+## 📸 Application Preview
+<details>
+  <summary>Click to view screenshots</summary>
+  <p align="center">
+    <img src="https://iili.io/fhexJtI.png" alt="Application Screenshot">
+    <img src="https://iili.io/fheI32s.png" alt="Select Campaign Modal">
+    <img src="https://iili.io/fheTXf9.png" alt="After Apply Discount">
+  </p>
+</details>
 
 ---
 
-## 🔍 Assumptions
-
-- Users can apply **only one campaign per category**: Coupon, On Top, Seasonal.
-- Discounts are applied in the following **order**: Coupon → On Top → Seasonal.
-- **Points-based discounts** (On Top) are limited to **20% of subtotal** (1 point = 1 THB).
-- Invalid points (negative, over limit, non-numeric) are automatically corrected.
-- The total amount will **never be negative**.
-- Placeholder text guides users when using points.
-
----
-
-## 🚀 How to Run Locally
-
-1. Clone the repository:
+## 📂 Project Architecture
 
 ```bash
-git clone https://github.com/savant777/playtorium-test2.git
-cd playtorium-test2
+playtorium-test2/
+├── public/
+│   └── index.html            # Main HTML entry point
+├── src/
+│   ├── components/           # Reusable UI Components
+│   │   ├── AppItems.js       # Cart item rendering & logic
+│   │   ├── AppSummary.js     # Real-time calculation engine
+│   │   ├── AppCampaigns.js   # Interactive campaign selection
+│   │   └── CampaignModal.js  # Modal-based campaign exploration
+│   ├── data/                 # Mock data (items.js, campaigns.js)
+│   ├── App.js                # Application orchestrator & Global State
+│   └── index.js              # React DOM entry point
+├── package.json              # Scripts & Dependencies
+└── README.md                 # Project documentation
 ```
-
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Run the development server:
-
-```bash
-npm start
-```
-
-The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## 📝 Additional Notes
+## 🎟️ Discount Logic & Features
 
-* This project is solely for assessment purposes and may not include extensive validation or responsive design.
-* The main goal is to showcase **logical thinking**, **code organization**, and **React component design**.
+The module implements a multi-tier discount system with the following capabilities:
 
-Thank you for the opportunity! 😊
+- **Coupon Layer:** Support for **Fixed Amount** or **Percentage-based** reductions.
+- **On Top Layer:** **Category-specific percentage** discounts or **Point-based** redemption.
+- **Seasonal Layer:** **Tiered spending** milestones (e.g., every X THB spent, get Y discount).
+- **Sequential Calculation Engine:** Discounts are applied in a strict, industry-standard sequence: **Coupon → On Top → Seasonal**.
+- **Dynamic Constraint Handling:** Automated point-adjustment logic that caps discounts at **20% of the current subtotal**.
+
+---
+
+## 🧠 Business Logic & Assumptions
+
+To ensure system integrity and a seamless User Experience, the following logic was implemented:
+
+1. **Category Mutual Exclusion:** Users may apply only one campaign per category (Coupon, On Top, Seasonal).
+2. **Order of Operations:** Discounts are recalculated sequentially to ensure accuracy after each deduction.
+3. **Data Integrity:**
+   - Point-based inputs are validated and auto-corrected for negative or over-limit values.
+   - The final total is mathematically guarded to never fall below zero.
+4. **Real-time Feedback:** All calculations update instantly upon state change, providing a responsive subtotal/discount breakdown.
+
+---
+
+## 🚀 Installation & Local Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/savant777/playtorium-test2.git
+   cd playtorium-test2
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start Development Server:**
+   ```bash
+   npm start
+   ```
+
+*The application will launch at `http://localhost:3000`*
+
+---
+
+## ℹ️ Technical Highlights
+
+This project highlights my proficiency in **React State Management**, specifically managing interdependent data across multiple components. By focusing on **Clean Code** and **Modular Design**, the system is easily scalable to include more complex campaign types in the future.
