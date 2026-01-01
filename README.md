@@ -94,3 +94,9 @@ To ensure system integrity and a seamless User Experience, the following logic w
 ## ℹ️ Technical Highlights
 
 This project highlights my proficiency in **React State Management**, specifically managing interdependent data across multiple components. By focusing on **Clean Code** and **Modular Design**, the system is easily scalable to include more complex campaign types in the future.
+
+---
+
+## 📜 License
+
+MIT License
