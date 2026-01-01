@@ -5,7 +5,7 @@ const items = [
         category: 'clothing',
         price: 350,
         quantity: 1,
-        image: '/images/item-01.jpg'
+        image: 'images/item-01.jpg'
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const items = [
         category: 'clothing',
         price: 700,
         quantity: 1,
-        image: '/images/item-02.jpg'
+        image: 'images/item-02.jpg'
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const items = [
         category: 'accessories',
         price: 450,
         quantity: 1,
-        image: '/images/item-03.jpg'
+        image: 'images/item-03.jpg'
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const items = [
         category: 'accessories',
         price: 600,
         quantity: 1,
-        image: '/images/item-04.jpg'
+        image: 'images/item-04.jpg'
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const items = [
         category: 'electronics',
         price: 850,
         quantity: 1,
-        image: '/images/item-05.jpg'
+        image: 'images/item-05.jpg'
     }
 ];
 
