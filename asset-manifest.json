@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/playtorium-test2/static/css/main.5ac68f12.css",
+    "main.js": "/playtorium-test2/static/js/main.2357e41b.js",
+    "static/js/453.6693405f.chunk.js": "/playtorium-test2/static/js/453.6693405f.chunk.js",
+    "index.html": "/playtorium-test2/index.html",
+    "main.5ac68f12.css.map": "/playtorium-test2/static/css/main.5ac68f12.css.map",
+    "main.2357e41b.js.map": "/playtorium-test2/static/js/main.2357e41b.js.map",
+    "453.6693405f.chunk.js.map": "/playtorium-test2/static/js/453.6693405f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ac68f12.css",
+    "static/js/main.2357e41b.js"
+  ]
+}
